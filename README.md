@@ -25,7 +25,7 @@ Uses Amazon RDS MySQL for secure, persistent data storage. Located in private su
 3. IPv4 CIDR block: 10.0.0.0/16
 4. Click create vpc
 
-![Architecture](images/Screenshot%201.png)
+![Architecture](images/Screenshot1.png)
 ## Step-2: Create Subnets
 #### Create 8 Subnets-
  - 2 Public Subnet.
