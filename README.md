@@ -25,7 +25,7 @@ Uses Amazon RDS MySQL for secure, persistent data storage. Located in private su
 3. IPv4 CIDR block: 10.0.0.0/16
 4. Click create vpc
 
-![Architecture](images/Screenshot1.png)
+![Architecture](Images/Screenshot1.png)
 ## Step-2: Create Subnets
 #### Create 8 Subnets-
  - 2 Public Subnet.
@@ -48,18 +48,18 @@ Uses Amazon RDS MySQL for secure, persistent data storage. Located in private su
 6. Subnet 4 → Name: DBSubnetZoneB→ AZ: ap-south-1b → CIDR: 10.0.112.0/20
 
 Click Create Subnets
-![Architecture](images/Screenshot%202.png)
+![Architecture](images/Screenshot2.png)
 
 ## Step - 3: Create Route Tables
 #### Create Two Route Tables - Public Route Table and Private Route Table
 
-![Architecture](images/Screenshot%203.png)
+![Architecture](images/Screenshot3.png)
 1.Create Internet Gateway and Attach to the VPC.
-![Architecture](images/Screenshot%204.png)
+![Architecture](images/Screenshot4.png)
 2.Add route of Internet Gateway in Public Route Table
-![Architecture](images/Screenshot%205.png)
+![Architecture](images/Screenshot5.png)
 ## Step 4- Create RDS(Mysql) Database
-![Architecture](images/Screenshot%206.png)
+![Architecture](images/Screenshot6.png)
 #### Steps to Create MySQL RDS Database
 
 1. Go to AWS RDS Console and click Create Database.
