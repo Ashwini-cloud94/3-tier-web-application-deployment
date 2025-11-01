@@ -48,18 +48,18 @@ Uses Amazon RDS MySQL for secure, persistent data storage. Located in private su
 6. Subnet 4 → Name: DBSubnetZoneB→ AZ: ap-south-1b → CIDR: 10.0.112.0/20
 
 Click Create Subnets
-![Architecture](images/Screenshot2.png)
+![Architecture](Images/Screenshot2.png)
 
 ## Step - 3: Create Route Tables
 #### Create Two Route Tables - Public Route Table and Private Route Table
 
-![Architecture](images/Screenshot3.png)
+![Architecture](Images/Screenshot3.png)
 1.Create Internet Gateway and Attach to the VPC.
-![Architecture](images/Screenshot4.png)
+![Architecture](Images/Screenshot4.png)
 2.Add route of Internet Gateway in Public Route Table
-![Architecture](images/Screenshot5.png)
+![Architecture](Images/Screenshot5.png)
 ## Step 4- Create RDS(Mysql) Database
-![Architecture](images/Screenshot6.png)
+![Architecture](Images/Screenshot6.png)
 #### Steps to Create MySQL RDS Database
 
 1. Go to AWS RDS Console and click Create Database.
@@ -76,7 +76,7 @@ Click Create Subnets
 
 7. Click Create Database and wait until it shows Available.
 ## Step 5- Launch Ec2 Instances
-![Architecture](images/Screenshot%207.png)
+![Architecture](Images/Screenshot7.png)
 #### Steps
 #### 1. Lauch JumpServer in public Subnet for ssh to RDS.
 - Install Mariadb
@@ -100,7 +100,7 @@ Click Create Subnets
  3. sudo systemctl enable nginx
 ## Step 6 - Get AMI
 ####  Create AMI(Amazon Machine Image) of Webserver and Appserver for AutoSCaling
-![Architecture](images/Screenshot%208.png)
+![Architecture](Images/Screenshot8.png)
 
 ## Step 7 - Create Autoscaling
 #### Create auto scaling for webtier and apptier.
@@ -111,11 +111,11 @@ Click Create Subnets
 - Mimimum- 1
 - Maximum - 4
 - Desire - 1
-![Architecture](images/Screenshot%209.png)
+![Architecture](Images/Screenshot9.png)
 ## Step 8- Create Load Balancer Target group
 #### Create Target Groups for webtier and Apptier
-![Architecture](images/Screenshot%2010.png)
+![Architecture](Images/Screenshot10.png)
 ## Step 9- Create Load Balancer
-![Architecture](images/Screenshot%2011.png)
+![Architecture](Images/Screenshot11.png)
 ## Conclusion
 #### This application follows a 3-tier architecture, which means it separates the user interface, the business logic, and the data storage into three independent layers. This makes the app easier to maintain, more secure, and allows each part to be updated or scaled without affecting the others. Using this structure also helps the application run smoothly in cloud environments like AWS, making it more reliable and flexible for future growth.
